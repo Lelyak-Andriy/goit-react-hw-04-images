@@ -1,8 +1,9 @@
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import PropTypes from 'prop-types';
 
-export default function toastError(query) {
-  return toast.error(`We did not find ${query}!`, {
+export default function toastWarn(inputValue) {
+  return toast.error(`We did not find ${inputValue}`, {
     position: 'top-right',
     autoClose: 5000,
     hideProgressBar: false,
@@ -12,3 +13,7 @@ export default function toastError(query) {
     progress: undefined,
   });
 }
+
+toastWarn.propTypes = {
+  inputValue: PropTypes.string,
+};

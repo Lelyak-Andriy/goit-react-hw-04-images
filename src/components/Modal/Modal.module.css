@@ -1,4 +1,4 @@
-.overlay {
+.Overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,13 +11,23 @@
   z-index: 1200;
 }
 
-.modal {
+.Modal {
   max-width: calc(100vw - 48px);
   max-height: calc(100vh - 24px);
 }
+.ModalButton {
+  position: absolute;
+  top: 5px;
+  right: 26px;
+  padding: 15px;
+  border-radius: 25px;
+  background: none;
+  border: none;
+}
 
-.image {
-  margin: auto auto;
-  max-width: 90vw;
-  max-height: 90vh;
+.ModalCloseIcon {
+  fill: white;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
 }
